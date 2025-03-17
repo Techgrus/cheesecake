@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form Submission</title>
+    <style>
+      body { font-family: "Poppins", Arial, sans-serif; margin: 0; padding: 0;
+      background-color: #f5f8fc; color: #333; } .container { max-width: 600px;
+      margin: 30px auto; background-color: #ffffff; border-radius: 12px;
+      overflow: hidden; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); } .header {
+      background-color: #2a61ee; color: #ffffff; padding: 20px 30px; text-align:
+      center; } .header h1 { font-size: 28px; margin: 0; font-weight: 600; }
+      .content { padding: 30px; text-align: left; line-height: 1.6; } .content p
+      { margin: 15px 0; font-size: 16px; color: #555; } .content p strong {
+      color: #2a61ee; } .card { margin-top: 20px; background-color: #eef4ff;
+      border-radius: 8px; padding: 15px; line-height: 1.5; } .footer {
+      background-color: #2a61ee; color: #ffffff; padding: 15px 30px; text-align:
+      center; font-size: 14px; } .footer a { color: #ffcc00; text-decoration:
+      none; font-weight: 600; } .footer a:hover { text-decoration: underline; }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1>New Contact Submission</h1>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <p><strong>Name:</strong> {{name}}</p>
+        <p><strong>Email:</strong> {{email}}</p>
+        <p><strong>Reason for Contact:</strong> {{reason}}</p>
+
+        <div class="card">
+          <p><strong>Message:</strong></p>
+          <p>{{message}}</p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>This email was generated automatically.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Inquiry Submission</title>
+    <style>
+      body { font-family: "Poppins", Arial, sans-serif; margin: 0; padding: 0;
+      background-color: #f5f8fc; color: #333; } .container { max-width: 700px;
+      margin: 30px auto; background-color: #ffffff; border-radius: 12px;
+      overflow: hidden; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); } .header {
+      background-color: #2a61ee; color: #ffffff; padding: 20px 30px; text-align:
+      center; } .header h1 { font-size: 28px; margin: 0; font-weight: 600; }
+      .section { background-color: #f9f9f9; border-radius: 10px; margin: 20px
+      30px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); } .section
+      h3 { font-size: 20px; margin-bottom: 15px; color: #2a61ee; font-weight:
+      600; } .section p { margin: 8px 0; font-size: 16px; color: #555;
+      line-height: 1.6; } .section p strong { color: #2a61ee; } .footer {
+      background-color: #2a61ee; color: #ffffff; padding: 15px 30px; text-align:
+      center; font-size: 14px; } .footer a { color: #ffcc00; text-decoration:
+      none; font-weight: 600; } .footer a:hover { text-decoration: underline; }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1>New Business Inquiry</h1>
+      </div>
+
+      <!-- Business Details -->
+      <div class="section">
+        <h3>Business Details</h3>
+        <p><strong>Business Name:</strong> {{businessName}}</p>
+        <p><strong>Business Type:</strong> {{businessType}}</p>
+        <p>
+          <strong>Business Website:</strong>
+          <a href="{{businessWebsite}}" target="_blank">{{businessWebsite}}</a>
+        </p>
+        <p><strong>Business Address:</strong> {{businessAddress}}</p>
+        <p><strong>City, State:</strong> {{cityState}}</p>
+        <p><strong>Zip Code:</strong> {{zipCode}}</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="section">
+        <h3>Contact Info</h3>
+        <p><strong>Contact Name:</strong> {{contactName}}</p>
+        <p><strong>Position/Title:</strong> {{positionTitle}}</p>
+        <p><strong>Email Address:</strong> {{emailAddress}}</p>
+        <p><strong>Phone Number:</strong> {{phoneNumber}}</p>
+      </div>
+
+      <!-- Order Details -->
+      <div class="section">
+        <h3>Order Details</h3>
+        <p><strong>Estimated Weekly Orders:</strong> {{weeklyOrders}}</p>
+        <p><strong>Preferred Flavors:</strong> {{preferredFlavors}}</p>
+        <p><strong>Storage Capacity:</strong> {{storageCapacity}}</p>
+      </div>
+
+      <!-- Additional Info -->
+      <div class="section">
+        <h3>Additional Info</h3>
+        <p>
+          <strong>Why would you like to offer Cheesecakes By Battle in your
+            business?</strong>
+        </p>
+        <p>{{offerReason}}</p>
+        <p><strong>Any specific requirements or requests?</strong></p>
+        <p>{{specificRequirements}}</p>
+        <p><strong>How did you hear about us?</strong> {{howDidYouHear}}</p>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>This email was generated automatically.</p>
+      </div>
+    </div>
+  </body>
+</html>
