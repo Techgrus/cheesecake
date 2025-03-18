@@ -10,6 +10,9 @@ module.exports = {
         foreground: "var(--foreground)",
         pinkOverlay: "rgba(255, 0, 153, 0.1)",
         blueOverlay: "rgba(0, 115, 255, 0.1)",
+        main: "#001C4C",
+        main_dark: "#011840",
+
       },
       fontFamily: {
         figtree: ['Figtree', 'sans-serif'],

@@ -2,6 +2,8 @@ import React, { useState, useContext, useEffect, useRef } from "react";
 import Button from "./Button";
 import { UserContext } from "../contexts/UserContext";
 
+// TODO: seasonal menue
+
 const MenuItem = ({ id, countId, heading, text, bg, img }) => {
   const { user, authenticatedFetch } = useContext(UserContext);
   const BASE_URL = import.meta.env.VITE_BACKEND_URL; // Get the base URL from .env file

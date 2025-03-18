@@ -11,7 +11,7 @@ const PickUp = () => {
       try {
         const response = await fetch(`${BASE_URL}/api/products`);
         const data = await response.json();
-
+        console.log(response)
         if (data.success) {
           // Map the data to match the format expected by SeasonalMenu
           const formattedItems = data.data.map((item) => ({

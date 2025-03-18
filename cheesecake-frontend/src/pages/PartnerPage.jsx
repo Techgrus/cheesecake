@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PartnerWithUs from "../components/PartnerWithUs";
 
+
 export default function PartnerPage() {
   return (
     <>
