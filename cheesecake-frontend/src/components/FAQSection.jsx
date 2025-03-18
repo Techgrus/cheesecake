@@ -73,7 +73,7 @@ const FAQSection = () => {
               {/* Arrow icon (using Tailwind transition classes) */}
               <img
               // TODO add white Svg
-                className="transition-all duration-300"
+                className="transition-all duration-300 h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] lg:h-[50px] lg:w-[50px]"
                 src={`/assets/${
                   activeIndex === index ? "arrowUp.svg" : hoveredIndex === index ? "arrowDownSolid.svg" : "arrowDownDashed.svg"
                 }`}
