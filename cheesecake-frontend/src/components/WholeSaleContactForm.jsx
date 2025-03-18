@@ -66,22 +66,22 @@ const WholesaleContactForm = () => {
   };
 
   const inputClasses =
-    "w-full p-3 border border-dashed border-gray-600 text-base bg-white focus:border-solid focus:outline-none focus:border-black focus:ring-2 focus:ring-black focus:ring-opacity-10";
+    "bg-white/0 w-full p-3 border border-dashed border-gray-600 text-base bg-white focus:border-solid focus:outline-none focus:border-white focus:ring-2 focus:ring-black focus:ring-opacity-10";
   const labelClasses = "block mb-2 font-medium font-montserrat";
   const requiredClasses = "text-red-500 ml-1";
 
   return (
-    <div className="max-w-4xl p-4 mx-auto md:p-8 border border-black mb-16">
-      <h1 className="md:text-5xl text-center mb-2 figtree-900 text-4xl">
+    <div className="max-w-4xl p-4 mx-auto md:p-8 border bg-main mb-16">
+      <h1 className="md:text-5xl text-center mb-2 figtree-900 text-4xl text-white">
         Contact Us
       </h1>
-      <h2 className=" md:text-5xl text-gray-600  text-center mb-8 figtree-700 text-3xl">
+      <h2 className=" md:text-5xl text-white/70  text-center mb-8 figtree-700 text-3xl">
         Wholesale
       </h2>
 
       <form onSubmit={handleSubmit}>
         {/* Business Info Section */}
-        <div className="p-4">
+        <div className="p-4 text-white">
           <h3 className="text-lg font-semibold italic underline mb-2 font-montserrat">
             Business Info
           </h3>
@@ -185,7 +185,7 @@ const WholesaleContactForm = () => {
         </div>
 
         {/* Contact Info Section */}
-        <div className="mb-2 p-4">
+        <div className="mb-2 p-4 text-white">
           <h3 className="text-lg font-semibold italic underline mb-2">
             Contact Info
           </h3>
@@ -256,7 +256,7 @@ const WholesaleContactForm = () => {
         </div>
 
         {/* Order Details Section */}
-        <div className="mb-2 p-4">
+        <div className="mb-2 p-4 text-white">
           <h3 className="text-lg font-semibold italic underline mb-2">
             Order Details
           </h3>
@@ -311,7 +311,7 @@ const WholesaleContactForm = () => {
         </div>
 
         {/* Additional Info Section */}
-        <div className="mb-2 p-4">
+        <div className="mb-2 p-4 text-white">
           <h3 className="text-lg font-semibold italic underline mb-2">
             Additional Info
           </h3>
@@ -378,8 +378,8 @@ const WholesaleContactForm = () => {
             !isSubmitted && (
               <button
                 type="submit"
-                className="border border-black
- px-6 rounded-[4px] montserrat-400 md:px-8 py-2 md:py-3 bg-black text-white text-base md:text-lg font-medium flex items-center gap-2 hover:bg-[rgba(0,0,0,0.03)] hover:text-black transition-colors"
+                className="
+ px-6 rounded-[4px] montserrat-500 md:px-8 py-2 md:py-3 bg-white text-black text-base md:text-lg font-medium flex items-center gap-2 hover:bg-white/80 hover:text-black transition-colors"
               >
                 Submit
                 <svg

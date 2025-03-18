@@ -59,9 +59,9 @@ const ContactUs = ({ className }) => {
 
   return (
     <div
-      className={`w-full max-w-[1058px] mx-auto p-4 md:p-8 bg-white shadow border border-black ${className} mb-12 md:mb-28`}
+      className={`w-full max-w-[1058px] mx-auto p-4 md:p-8 bg-main shadow rounded-2xl ${className} mb-12 md:mb-28`}
     >
-      <h1 className="text-center text-black text-[28px] sm:text-[48px] md:text-[64px] figtree-900 mb-6 md:mb-8">
+      <h1 className="text-center text-white text-[28px] sm:text-[48px] md:text-[64px] figtree-900 mb-6 md:mb-8">
         Contact Us
       </h1>
       <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
@@ -69,7 +69,7 @@ const ContactUs = ({ className }) => {
         <div>
           <label
             htmlFor="name"
-            className="block text-black text-base sm:text-lg md:text-xl montserrat-400 mb-2"
+            className="block text-white text-base sm:text-lg md:text-xl montserrat-400 mb-2"
           >
             Name: <span className="text-red-600">*</span>
           </label>
@@ -79,7 +79,7 @@ const ContactUs = ({ className }) => {
             type="text"
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-3 md:px-4 py-2 md:py-3 border-dashed border-2 border-black text-base"
+            className="w-full px-3 md:px-4 py-2 md:py-3 border-dashed border-2 text-white border-white text-base bg-transparent"
             required
           />
         </div>
@@ -88,7 +88,7 @@ const ContactUs = ({ className }) => {
         <div>
           <label
             htmlFor="email"
-            className="block text-black text-base sm:text-lg md:text-xl font-normal font-['Montserrat'] mb-2"
+            className="block text-white text-base sm:text-lg md:text-xl font-normal font-['Montserrat'] mb-2"
           >
             Email: <span className="text-red-600">*</span>
           </label>
@@ -98,14 +98,14 @@ const ContactUs = ({ className }) => {
             type="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-3 md:px-4 py-2 md:py-3 border-dashed border-2 border-black text-base"
+            className="w-full px-3 md:px-4 py-2 md:py-3 border-dashed border-2 text-white border-white bg-transparent text-base"
             required
           />
         </div>
 
         {/* Reason of Contact */}
         <div>
-          <label className="block text-black text-base sm:text-lg md:text-xl font-normal font-['Montserrat'] mb-2">
+          <label className="block text-white text-base sm:text-lg md:text-xl font-normal font-['Montserrat'] mb-2">
             Reason of Contact: <span className="text-red-600">*</span>
           </label>
           <div className="flex flex-wrap gap-2 md:gap-4">
@@ -113,7 +113,7 @@ const ContactUs = ({ className }) => {
               <button
                 key={reason}
                 type="button"
-                className={`px-3 md:px-4 py-2 md:py-3 bg-[rgba(0,0,0,0.03)]  montserrat-400 border-2 border-black text-sm sm:text-base whitespace-nowrap
+                className={`px-3 md:px-4 py-2 md:py-3 bg-white/5 text-white  montserrat-400 border-2 border-white  text-sm sm:text-base whitespace-nowrap
                   ${
                     formData.reason === reason
                       ? "border-solid "
@@ -131,7 +131,7 @@ const ContactUs = ({ className }) => {
         <div>
           <label
             htmlFor="message"
-            className="block text-black text-base sm:text-lg md:text-xl font-normal font-['Montserrat'] mb-2"
+            className="block text-white text-base sm:text-lg md:text-xl font-normal font-['Montserrat'] mb-2"
           >
             Your Message: <span className="text-red-600">*</span>
           </label>
@@ -140,7 +140,7 @@ const ContactUs = ({ className }) => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-3 md:px-4 py-2 md:py-3 border-dashed border-2 border-black text-base min-h-[120px]"
+            className="w-full px-3 md:px-4 py-2 md:py-3 border-dashed border-2 border-white bg-transparent text-white text-base min-h-[120px]"
             required
           />
         </div>
@@ -148,7 +148,7 @@ const ContactUs = ({ className }) => {
         {/* Submit Button / Video */}
         <div className="flex justify-center pt-2">
           {success && !videoEnded ? (
-            <div className="w-20 h-10 bg-black rounded-[4px] flex items-center justify-center">
+            <div className="w-20 h-10 bg-white rounded-[4px] flex items-center justify-center">
               <video
                 width="35"
                 height="1000"
@@ -164,7 +164,7 @@ const ContactUs = ({ className }) => {
               <button
                 type="submit"
                 className="border border-black
- px-6 rounded-[4px] montserrat-400 md:px-8 py-2 md:py-3 bg-black text-white text-base md:text-lg font-medium flex items-center gap-2 hover:bg-[rgba(0,0,0,0.03)] hover:text-black transition-colors"
+ px-6 rounded-[4px] montserrat-500 md:px-8 py-2 md:py-3 bg-white text-black text-base md:text-lg font-medium flex items-center gap-2 hover:bg-white/80 hover:text-black transition-colors"
               >
                 Submit
                 <svg

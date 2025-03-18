@@ -44,16 +44,14 @@ export default function JourneyTimeline() {
         {steps.map((step, index) => (
           <div
             key={step.number}
-            className={` flex-shrink-0 w-full sm:w-[280px]  `}
+            className={` flex-shrink-0 w-full sm:w-[280px] translate-y-2 hover:scale-[1.0005] hover:translate-y-0 transition-transform duration-300 ease-in-out `}
           >
-            <div className={`p-6 ${
-              index % 2 === 0 ? "bg-blue-100" : "bg-pink-100"
-            }`}>
+            <div className={`p-6 bg-white border border-main shadow-lg`}>
             <div className="flex items-center  gap-3 mb-4">
-              <span className="w-8 h-8 flex text-lg md:text-xl montserrat-600 items-center justify-center bg-black text-white ">
+              <span className="w-8 h-8 flex text-lg md:text-xl montserrat-600 items-center justify-center bg-main text-white ">
                 {step.number}
               </span>
-              <h2 className="montserrat-600 text-lg md:text-xl">{step.title}</h2>
+              <h2 className="montserrat-600 text-lg md:text-xl text-main">{step.title}</h2>
             </div>
             <p className="text-center text-gray-800 montserrat-400 text-sm md:text-lg">
               {step.description}

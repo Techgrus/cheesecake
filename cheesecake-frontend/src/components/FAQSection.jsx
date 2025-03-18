@@ -52,8 +52,8 @@ const FAQSection = () => {
           <div
             key={index}
             className={`${
-              hoveredIndex === index ? "bg-[#0072ff1a]" : "bg-white"
-            } rounded-[10px] border-[0.84px] border-solid border-black px-4 sm:px-6 py-4 transition-all figtree-700`}
+              hoveredIndex === index ? "bg-main_dark" : "bg-main"
+            } rounded-[10px] px-4 sm:px-6 py-4 transition-all figtree-700`}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
@@ -65,13 +65,14 @@ const FAQSection = () => {
               {/* [font-family:'Figtree-Bold',Helvetica] */}
               <p
                 className={`
-                text-black
+                text-white
                  text-[20px] sm:text-[24px] lg:text-[26px] figtree-700`}
               >
                 {item.question}
               </p>
               {/* Arrow icon (using Tailwind transition classes) */}
               <img
+              // TODO add white Svg
                 className="transition-all duration-300"
                 src={`/assets/${
                   activeIndex === index ? "arrowUp.svg" : hoveredIndex === index ? "arrowDownSolid.svg" : "arrowDownDashed.svg"
@@ -81,7 +82,7 @@ const FAQSection = () => {
 
             {/* Answer (only visible when active) */}
             {activeIndex === index && (
-              <p className="mt-2 text-xl sm:text-[18px] lg:text-xl text-[#000000b2] montserrat-400">
+              <p className="mt-2 text-xl sm:text-[18px] lg:text-xl text-white montserrat-300">
                 {item.answer}
               </p>
             )}

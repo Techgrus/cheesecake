@@ -87,6 +87,8 @@ import { UserContext } from "../contexts/UserContext";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+// TODO seasonal menue
+
 const SeasonalMenu = ({ menuItems = [] }) => {
   const BASE_URL = import.meta.env.VITE_BACKEND_URL; // Get the base URL from .env file
   const { user, authenticatedFetch } = useContext(UserContext);

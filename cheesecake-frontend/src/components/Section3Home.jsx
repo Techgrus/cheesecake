@@ -36,8 +36,8 @@ const Section3Home = () => {
         <div className="flex flex-col">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0">
             <h1 className="text-4xl sm:text-6xl lg:text-[96px] figtree-900">Seasonal Menu</h1>
-            <div className="h-[47px] px-4 sm:px-[22px] py-2.5 bg-[#ff0099]/10 rounded-[3px] justify-center items-center gap-2.5 inline-flex">
-              <div className="text-black text-base sm:text-lg lg:text-[22px] font-normal font-['Montserrat']">
+            <div className="h-[47px] px-4 sm:px-[22px] py-2.5 bg-main  rounded-[6px] justify-center items-center gap-2.5 inline-flex">
+              <div className="text-white text-base sm:text-lg lg:text-[22px] font-normal font-['Montserrat']">
                 Total Products: {products.length}
               </div>
             </div>

@@ -1,6 +1,15 @@
-<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Frame 23">
-<rect x="0.418605" y="0.918605" width="29.1628" height="29.1628" rx="1.4564" stroke="black" stroke-width="0.837209" stroke-linecap="round" stroke-dasharray="3.49 3.49"/>
-<path id="Arrow 1" d="M15.4612 8.00754C15.2065 7.75282 14.7935 7.75282 14.5388 8.00754L10.3879 12.1585C10.1332 12.4132 10.1332 12.8262 10.3879 13.0809C10.6426 13.3356 11.0556 13.3356 11.3103 13.0809L15 9.39118L18.6897 13.0809C18.9444 13.3356 19.3574 13.3356 19.6121 13.0809C19.8668 12.8262 19.8668 12.4132 19.6121 12.1585L15.4612 8.00754ZM15.6523 22.5312V8.46875H14.3477V22.5312H15.6523Z" fill="black"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 31" style="enable-background:new 0 0 30 31;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:0.8372;stroke-linecap:round;stroke-dasharray:3.49,3.49;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g id="Frame_23">
+	<path class="st0" d="M1.9,0.9h26.2c0.8,0,1.5,0.7,1.5,1.5v26.2c0,0.8-0.7,1.5-1.5,1.5H1.9c-0.8,0-1.5-0.7-1.5-1.5V2.4
+		C0.4,1.6,1.1,0.9,1.9,0.9z"/>
+	<path id="Arrow_1" class="st1" d="M15.5,8c-0.3-0.3-0.7-0.3-0.9,0l-4.2,4.2c-0.3,0.3-0.3,0.7,0,0.9c0.3,0.3,0.7,0.3,0.9,0L15,9.4
+		l3.7,3.7c0.3,0.3,0.7,0.3,0.9,0c0.3-0.3,0.3-0.7,0-0.9L15.5,8z M15.7,22.5V8.5h-1.3v14.1H15.7z"/>
 </g>
 </svg>

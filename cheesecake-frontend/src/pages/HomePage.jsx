@@ -6,6 +6,7 @@ import Section3Home from '../components/Section3Home';
 import FAQSection from '../components/FAQSection';
 import Footer from '../components/Footer';
 
+
 const HomePage = () => {
   return (
     <div>

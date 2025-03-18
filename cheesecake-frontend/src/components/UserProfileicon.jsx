@@ -51,7 +51,7 @@ const UserProfileIcon = () => {
             className="h-full w-full rounded-full object-cover"
           />
         ) : (
-          <User className="md:h-8 md:w-8 w-6 h-6  text-black" />
+          <User className="md:h-8 md:w-8 w-6 h-6  text-white" />
         )}
       </button>
 

@@ -29,12 +29,10 @@ const VisionSection = () => {
           {visionItems.map((item, index) => (
             <div
               key={index}
-              className={`${item.rotate} rounded-sm flex flex-col items-center gap-2.5 overflow-hidden w-[264px]`}
+              className={`${item.rotate} hover:rotate-0 rounded-sm flex flex-col items-center gap-2.5 overflow-hidden w-[264px] transition-transform duration-300 ease-in-out`}
             >
-              <div className={`shadow-[0px_2px_10px_0px_rgba(0,0,0,0.10)]  p-6 text-center ${
-              index % 2 === 0 ? " bg-blue-100" : "bg-pink-100"
-            }`}>
-                <h3 className="text-black text-lg md:text-xl montserrat-600 ">
+              <div className={`shadow-[0px_2px_10px_0px_rgba(0,0,0,0.10)]  p-6 text-center bg-white border border-main`}>
+                <h3 className="text-main text-lg md:text-xl montserrat-600 ">
                   {item.title}
                 </h3>
                 <p className=" text-black/80 montserrat-400 text-sm md:text-lg">

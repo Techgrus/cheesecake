@@ -4,6 +4,7 @@ import EventsAndCatering from '../components/Events';
 import ContactUs from '../components/ContactUsForm';
 import Footer from '../components/Footer';
 
+
 const Catering = () => {
   return (
     <section className='md:mt-28 mt-10'>
