@@ -28,9 +28,9 @@ const HeaderTest = () => {
   }
 
   const picItems = new Map([
-    ["/home", "story.png"],
-    ["/catering", "catering.png"],
-    ["/ourstory", "home.png"],
+    ["/home", "story.webp"],
+    ["/catering", "catering.webp"],
+    ["/ourstory", "home.webp"],
   ]);
 
   const imagePosItems = new Map([
@@ -79,7 +79,7 @@ const HeaderTest = () => {
 
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-[10px] border border-white/50 bg-white/15 shadow-md backdrop-blur-sm">
             <Link to="/">
-              <img src="/assets/Logo.png" className="md:w-16 md:h-16 w-12 h-12" width="80px" height="80px" alt="Logo"  />
+              <img src="/assets/Logo.webp" className="md:w-16 md:h-16 w-12 h-12" width="80px" height="80px" alt="Logo"  />
             </Link>  
           
           </div>

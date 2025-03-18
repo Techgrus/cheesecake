@@ -11,7 +11,7 @@ const MenuItem = ({ id, countId, heading, text, bg, img }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   // Dynamic background class
-  const bgClass = bg === "blueOverlay" ? "bg-blueOverlay" : "transparent";
+  const bgClass = bg === "blueOverlay" ? "main" : "transparent";
 
   // Order function (async call)
   const order = async () => {
@@ -82,7 +82,7 @@ const MenuItem = ({ id, countId, heading, text, bg, img }) => {
       }}
       className={`w-full min-h-[380px] flex flex-col transition-all duration-500 lg:flex-row justify-center items-center p-4 sm:p-6 lg:p-10 ${
         isHovered || isInView
-          ? "bg-[url('/assets/Frame113.png')]"
+          ? "bg-main text-white"
           : "bg-transparent"
       }`}
       onMouseEnter={() => setIsHovered(true)}
@@ -110,13 +110,13 @@ const MenuItem = ({ id, countId, heading, text, bg, img }) => {
             <button
               style={{
                 borderRadius: "6.6px",
-                border: isInView ? "1px solid black" : "none",
+                border: isInView ? "1px solid white" : "none",
               }}
               className="h-[50px] w-[156px] py-3 px-4 flex justify-center items-center text-sm sm:text-base transition-all duration-300 hover:opacity-90"
             >
               <p
                 style={{
-                  color: isInView ? "black" : "rgba(0, 0, 0, 1)",
+                  color: isInView ? "" : "text-white",
                 }}
                 className="montserrat-500 text-xl"
               >
@@ -125,7 +125,7 @@ const MenuItem = ({ id, countId, heading, text, bg, img }) => {
             </button>
             <button
               style={{
-                background: isInView ? "rgba(0, 0, 0, 1)" : "transparent",
+                background: isInView ? "white" : "transparent",
                 borderRadius: "6.6px",
                 border: isInView ? "1px solid black" : "none",
               }}
@@ -134,9 +134,9 @@ const MenuItem = ({ id, countId, heading, text, bg, img }) => {
             >
               <p
                 style={{
-                  color: isInView
-                    ? "rgba(255, 255, 255, 1)"
-                    : "rgba(0, 0, 0, 1)",
+                  color: !isInView
+                    ? "black"
+                    : "#001C4C",
                 }}
                 className=" montserrat-500 text-xl"
               >
@@ -170,13 +170,13 @@ const MenuItem = ({ id, countId, heading, text, bg, img }) => {
               <button
                 style={{
                   borderRadius: "6.6px",
-                  border: isHovered ? "1px solid black" : "none",
+                  border: isHovered ? "1px solid white" : "none",
                 }}
                 className="h-[50px] w-[156px] py-3 px-4 flex justify-center items-center text-sm sm:text-base transition-all duration-300 hover:opacity-90"
               >
                 <p
                   style={{
-                    color: isHovered ? "black" : "rgba(0, 0, 0, 1)",
+                    color: isHovered ? "white" : "rgba(0, 0, 0, 1)",
                   }}
                   className="montserrat-500 text-xl"
                 >
@@ -185,7 +185,7 @@ const MenuItem = ({ id, countId, heading, text, bg, img }) => {
               </button>
               <button
                 style={{
-                  background: isHovered ? "rgba(0, 0, 0, 1)" : "transparent",
+                  background: isHovered ? "white" : "transparent",
                   borderRadius: "6.6px",
                   border: isHovered ? "1px solid black" : "none",
                 }}
@@ -195,8 +195,8 @@ const MenuItem = ({ id, countId, heading, text, bg, img }) => {
                 <p
                   style={{
                     color: isHovered
-                      ? "rgba(255, 255, 255, 1)"
-                      : "rgba(0, 0, 0, 1)",
+                    ? "#001C4C"
+                    : "rgba(0, 0, 0, 1)",
                   }}
                   className=" montserrat-500 text-xl"
                 >
@@ -219,13 +219,13 @@ const MenuItem = ({ id, countId, heading, text, bg, img }) => {
               <button
                 style={{
                   borderRadius: "6.6px",
-                  border: isHovered ? "1px solid black" : "none",
+                  border: isHovered ? "1px solid white" : "none",
                 }}
                 className="h-[50px] w-[156px] p-3 flex justify-center items-center text-sm sm:text-base transition-all duration-300 hover:opacity-90"
               >
                 <p
                   style={{
-                    color: isHovered ? "black" : "rgba(0, 0, 0, 1)",
+                    color: isHovered ? "white" : "black",
                   }}
                   className="montserrat-500 text-xl"
                 >
@@ -234,7 +234,7 @@ const MenuItem = ({ id, countId, heading, text, bg, img }) => {
               </button>
               <button
                 style={{
-                  background: isHovered ? "rgba(0, 0, 0, 1)" : "transparent",
+                  background: isHovered ? "white" : "transparent",
                   borderRadius: "6.6px",
                   border: isHovered ? "1px solid black" : "none",
                 }}
@@ -244,7 +244,7 @@ const MenuItem = ({ id, countId, heading, text, bg, img }) => {
                 <p
                   style={{
                     color: isHovered
-                      ? "rgba(255, 255, 255, 1)"
+                      ? "#001C4C"
                       : "rgba(0, 0, 0, 1)",
                   }}
                   className="montserrat-500 text-xl"

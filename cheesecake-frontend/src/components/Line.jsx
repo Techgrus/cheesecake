@@ -6,7 +6,7 @@ const Line = () => {
   
 
   return (
-    <div className="flex flex-col sm:flex-row justify-start items-start sm:items-center gap-4 sm:gap-[30px]">
+    <div className="flex flex-col sm:flex-row justify-start items-start sm:items-center gap-4 sm:gap-[30px] ">
       {/* First Section - Pick Up By */}
       <div className="flex items-center flex-wrap gap-[5px]">
         <img src="/assets/calender.svg" alt="calendar icon" className="w-6 h-6" />

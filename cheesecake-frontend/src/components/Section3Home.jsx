@@ -23,6 +23,7 @@ const Section3Home = () => {
         }));
         setProducts(enrichedProducts);
       } catch (error) {
+
       }
     };
 

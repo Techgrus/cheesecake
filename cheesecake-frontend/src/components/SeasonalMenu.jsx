@@ -95,7 +95,8 @@ const SeasonalMenu = ({ menuItems = [] }) => {
 
   // Set colors for alternating pattern
   const getBackgroundColor = (index) => {
-    return index % 2 === 0 ? "bg-pink-100" : "bg-blue-100";
+    const colors = ["bg-[#7C7214]", "bg-[#5D0400]", "bg-[#001C4C]"];
+    return colors[index % 3];
   };
 
   const order = async (id) => {
@@ -208,7 +209,7 @@ const SeasonalMenu = ({ menuItems = [] }) => {
  
 
   return (
-    <div className="mt-32">
+    <div className="mt-12">
       <ToastContainer /> {/* Add ToastContainer here */}
       {/* Header Section */}
       <div className="flex justify-between items-center mb-6">
@@ -267,11 +268,11 @@ const SeasonalMenu = ({ menuItems = [] }) => {
                 <div className="flex items-center gap-4">
                   <button
                     onClick={() => order(item.id)}
-                    className="p-2 bg-black text-white rounded-md md:text-lg text-sm montserrat-500 flex items-center gap-2"
+                    className="p-2 bg-black hover:bg-main text-white rounded-md md:text-lg text-sm montserrat-500 flex items-center gap-2"
                   >
                     Order Now
                   </button>
-                  <img className="md:w-[37px] md:h-[37px] w-[35px] h-[20px]" src={"/assets/eye.png"} />
+                  {/* <img className="md:w-[37px] md:h-[37px] w-[35px] h-[20px]" src={"/assets/eye.png"} /> */}
                 </div>
               </div>
             );

@@ -24,8 +24,11 @@ const PickUp = () => {
           setMenuItems(formattedItems);
         } else {
         }
-      } catch (error) {
+      } 
+      catch (error) {
+
       }
+
     };
 
     fetchMenuItems();

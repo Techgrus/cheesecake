@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import hb from "../assets/hamburger.png"; // Adjust the path to your image
+import hb from "../assets/hamburger.svg"; // Adjust the path to your image
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
