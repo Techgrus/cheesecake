@@ -75,13 +75,19 @@ export const Footer = () => {
           </div>
 
           {/* Right Section */}
-          <div className="flex flex-col items-end gap-6 sm:gap-8 w-full md:w-1/3">
+          <div className="flex flex-col items-end gap-6 sm:gap-4 w-full md:w-1/3">
             <div className="figtree-700 text-xl sm:text-2xl lg:text-3xl text-main">
               Contact Us
             </div>
             <div className="text-base sm:text-lg text-black text-right montserrat-500">
               <div>Phone: +1 234 5678</div>
               <div className="mt-2">Contact@CCByBattle.com</div>
+            </div>
+            <div className="figtree-700 text-xl sm:text-2xl lg:text-3xl text-main">
+              opening hours
+            </div>
+            <div className="text-base sm:text-lg text-black text-right montserrat-500">
+              <div>Saturday 12pm-5pm</div>
             </div>
           </div>
         </div>

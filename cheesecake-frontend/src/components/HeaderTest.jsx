@@ -28,13 +28,13 @@ const HeaderTest = () => {
   }
 
   const picItems = new Map([
-    ["/home", "story.webp"],
+    ["/home", "main_hero_image.webp"],
     ["/catering", "catering.webp"],
     ["/ourstory", "home.webp"],
   ]);
 
   const imagePosItems = new Map([
-    ["/home", "object-[0px_bottom]"],
+    ["/home", "object-[0px_-20px]"],
     ["/catering", "object-[0px_-40px]"],
     ["/ourstory", "object-[0px_-10px]"],
   ]);
@@ -114,7 +114,7 @@ const HeaderTest = () => {
             className="w-[90%] p-2 md:w-[671px] md:h-[38px] h-[35px] text-white flex items-center justify-center mx-auto bg-[linear-gradient(87.89deg,#5D04008f_-14.05%,#7C72148f_50.47%,#001C4C_115%),linear-gradient(0deg,rgba(0,28,76,1),rgba(0,28,76,1))]"
           >
             <p className="text-xs md:text-base text-center font-montserrat">
-              We Only Offer Pickups - On Saturdays (10am - 10pm)
+              We Only Offer Pickups - On Saturdays (12pm - 5pm)
             </p>
           </div>
         )}
