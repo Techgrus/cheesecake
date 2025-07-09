@@ -1,4 +1,3 @@
-import e from "express";
 import configuration from "../models/configuration.model.js";
 
 export const createPickUpDay = async (req, res) => {
@@ -48,13 +47,11 @@ export const createPickUpDay = async (req, res) => {
 export const fetchPickupDays = async () => {
   try {
     const config = await configuration.findOne({ key: "pickup_days" });
-
     if (!config) {
       throw new Error("Pickup days not found");
     }
     return config;
   } catch (error) {
-    console.log(error);
     throw new Error(error.message);
   }
 };

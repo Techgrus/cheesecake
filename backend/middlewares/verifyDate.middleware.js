@@ -5,6 +5,7 @@ export const verifyDate = async (req, res, next) => {
   try {
     const { date } = req.body;
 
+
     if (!date) {
       return res
         .status(400)

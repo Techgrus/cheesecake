@@ -168,6 +168,12 @@ export default function CartPage() {
           onChange={(date) => setSelectedDate(date)}
           minDate={new Date()} // Prevent selecting past dates
           className="p-2 border rounded w-full"
+          filterDate={date => [0, 6].includes(date.getDay())} // Only allow Sat (6) and Sun (0)
+          dayClassName={date =>
+            [1, 2, 3, 4, 5].includes(date.getDay())
+              ? 'react-datepicker__day--disabled'
+              : undefined
+          }
         />
       </div>
       <div className="flex justify-between items-center mt-4">
@@ -175,11 +181,10 @@ export default function CartPage() {
         <button
           onClick={handleCheckout}
           disabled={cartItems.length === 0}
-          className={`px-4 py-2 ${
-            cartItems.length === 0
-              ? 'bg-gray-400 cursor-not-allowed'
-              : 'bg-green-500 hover:bg-green-600'
-          } text-white rounded`}
+          className={`px-4 py-2 ${cartItems.length === 0
+            ? 'bg-gray-400 cursor-not-allowed'
+            : 'bg-green-500 hover:bg-green-600'
+            } text-white rounded`}
         >
           Checkout
         </button>

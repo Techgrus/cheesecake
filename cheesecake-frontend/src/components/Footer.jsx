@@ -80,7 +80,7 @@ export const Footer = () => {
               Contact Us
             </div>
             <div className="text-base sm:text-lg text-black text-right montserrat-500">
-              <div>Phone: +1 234 5678</div>
+              {/* <div>Phone: +1 234 5678</div> */}
               <div className="mt-2">Contact@CCByBattle.com</div>
             </div>
             <div className="figtree-700 text-xl sm:text-2xl lg:text-3xl text-main">
