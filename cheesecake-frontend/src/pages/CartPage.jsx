@@ -168,7 +168,9 @@ export default function CartPage() {
           onChange={(date) => setSelectedDate(date)}
           minDate={new Date()} // Prevent selecting past dates
           className="p-2 border rounded w-full"
-          filterDate={date => [0, 6].includes(date.getDay())} // Only allow Sat (6) and Sun (0)
+          // Only allow Sat (6) 
+          filterDate={date => [6].includes(date.getDay())}
+
           dayClassName={date =>
             [1, 2, 3, 4, 5].includes(date.getDay())
               ? 'react-datepicker__day--disabled'
