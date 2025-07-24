@@ -70,7 +70,6 @@ const HeaderTest = () => {
       <div className="w-full flex flex-col absolute z-10">
         <div className="relative shadow-md px-4 md:px-9 flex h-[60px] md:h-[80px] justify-between bg-lightgray bg-cover bg-no-repeat bg-main">
           <div className="flex items-center">
-            {/* TODO Change svg color to white */}
             <img src="/assets/hamburger.svg" alt="Menu" className="cursor-pointer md:w-6 md:h-6 w-4 h-4" onClick={toggleMenu} />
             <div className="ml-2 md:ml-6">
               <h3 className="text-xl md:text-2xl font-semibold text-white">{headerText}</h3>
@@ -88,7 +87,7 @@ const HeaderTest = () => {
             <UserProfileIcon />
             {user && (
               <Link to="/cart">
-                <ShoppingCart size={24} className="text-black cursor-pointer hover:text-gray-700 transition" />
+                <ShoppingCart size={24} className="text-white cursor-pointer hover:text-gray-700 transition" />
               </Link>
             )}
           </div>

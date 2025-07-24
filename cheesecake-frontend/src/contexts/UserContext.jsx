@@ -13,36 +13,48 @@ export const UserProvider = ({ children }) => {
 
 
 
-  useEffect(() => {
-    const checkAuth = async () => {
-      try {
-        const response = await fetch(`${BASE_URL}/api/auth/islogin`, {
-          method: 'POST',
-          credentials: 'include',
-        });
+useEffect(() => {
+  const checkAuth = async () => {
+    // 👇 DEV MODE: Simulate user
+    if (import.meta.env.DEV) {
+      setUser({
+        _id: 'dev123',
+        name: 'Dev User',
+        email: 'dev@example.com',
+        isAdmin: true, // or false, depending on what UI you want to test
+        token: 'fake-token'
+      });
+      setLoading(false);
+      return;
+    }
 
-        const data = await response.json();
-        if (data.success) {
-          // Make sure to include all necessary user data including isAdmin
-          const userData = {
-            ...data.data,
-            isAdmin: Boolean(data.data.isAdmin) // Ensure isAdmin is properly set
-          };
-          setUser(userData);
-          
-          // For debugging
-        } else {
-          setUser(null);
-        }
-      } catch (error) {
+    // 👇 PRODUCTION: Use real backend
+    try {
+      const response = await fetch(`${BASE_URL}/api/auth/islogin`, {
+        method: 'POST',
+        credentials: 'include',
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        const userData = {
+          ...data.data,
+          isAdmin: Boolean(data.data.isAdmin)
+        };
+        setUser(userData);
+      } else {
         setUser(null);
-      } finally {
-        setLoading(false);
       }
-    };
+    } catch (error) {
+      setUser(null);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    checkAuth();
-  }, []);
+  checkAuth();
+}, []);
+
 
   const login = async (email, password) => {
     try {
