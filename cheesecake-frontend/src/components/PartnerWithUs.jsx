@@ -8,8 +8,8 @@ export default function PartnerWithUs() {
     ],
     partnersTitle: "Our Current Partners",
     partners: [
-      { name: "Kozmo's Grille", logo: "/assets/partners(2).png", location: "Massillon, OH", desc: "A vibrant American bistro located in the heart of Massillon, OH, Kozmo’s Grille is known for its upscale casual dining experience. With a menu full of handcrafted dishes and fresh ingredients, it’s the perfect place to enjoy a great meal. Now featuring our signature cheesecakes, adding a sweet touch to their delicious offerings." },
-      { name: "Fat Head's Brewery", logo: "/assets/partners(1).png", location: "North Canton, OH", desc: "A renowned brewery in North Canton, OH, Fat Head’s Brewery is famous for its bold craft beers, including the popular Bumble Berry Ale. We love collaborating with them by incorporating their unique brews into our cheesecakes, creating a one-of-a-kind flavor experience. Enjoy a slice of our cheesecake alongside their award-winning beer selections." },
+      { name: "Kozmo's Grille", logo: "/assets/partners(2).webp", location: "Massillon, OH", desc: "A vibrant American bistro located in the heart of Massillon, OH, Kozmo’s Grille is known for its upscale casual dining experience. With a menu full of handcrafted dishes and fresh ingredients, it’s the perfect place to enjoy a great meal. Now featuring our signature cheesecakes, adding a sweet touch to their delicious offerings." },
+      { name: "Harter’s 6th Street Pizza and Wings", logo: "/assets/partners(1).webp", location: "Massillon, OH", desc: "Harter’s brings bold flavor to 6th Street with their signature hot honey pepperoni and gyro pizzas — local favorites that keep customers coming back. We’re proud to partner with this rising star to add a sweet twist to their savory lineup with our handcrafted cheesecakes." },
     ],
     notEveryoneGetsIn: {
       title: "Not Everyone Gets In.",

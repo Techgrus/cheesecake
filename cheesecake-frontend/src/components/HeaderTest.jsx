@@ -42,7 +42,7 @@ const HeaderTest = () => {
   const mobileImagePosItems = new Map([
     ["/home", "object-[0px_50px]"],
     ["/catering", "object-[0px_-20px]"],
-    ["/ourstory", "object-[0px_-40px]"],
+    ["/ourstory", "object-[0px_60px]"],
   ]);
 
   useEffect(() => {
