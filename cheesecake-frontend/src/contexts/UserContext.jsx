@@ -15,18 +15,18 @@ export const UserProvider = ({ children }) => {
 
 useEffect(() => {
   const checkAuth = async () => {
-    // 👇 DEV MODE: Simulate user
-    if (import.meta.env.DEV) {
-      setUser({
-        _id: 'dev123',
-        name: 'Dev User',
-        email: 'dev@example.com',
-        isAdmin: true, // or false, depending on what UI you want to test
-        token: 'fake-token'
-      });
-      setLoading(false);
-      return;
-    }
+    // // 👇 DEV MODE: Simulate user
+    // if (import.meta.env.DEV) {
+    //   setUser({
+    //     _id: 'dev123',
+    //     name: 'Dev User',
+    //     email: 'dev@example.com',
+    //     isAdmin: true, // or false, depending on what UI you want to test
+    //     token: 'fake-token'
+    //   });
+    //   setLoading(false);
+    //   return;
+    // }
 
     // 👇 PRODUCTION: Use real backend
     try {
