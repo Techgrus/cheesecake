@@ -101,7 +101,7 @@ export const Footer = () => {
         </p>
         <p className="text-sm sm:text-lg text-center sm:text-left">
           <span className="montserrat-500">Powered By </span>
-          <span className="montserrat-700"><a href="https://techgrus.com">techgrus</a></span>
+          <span className="montserrat-700"><a href="https://TableTurnerr.com">TableTurnerr.com</a></span>
         </p>
       </div>
     </footer>
